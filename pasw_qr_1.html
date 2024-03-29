@@ -32,17 +32,17 @@
                 var taskPage = tasksPerQRCode[teamNumber][qrCodeNumber - 1];
                 window.location.href = taskPage;
             } else {
-                alert("Incorrect password. Please try again.");
+               alert("Nå har du glemt passordet ditt din ku, det var virkelig ikke så vanskelig");
             }
         }
     </script>
 </head>
 <body>
-    <h1>Velg lag</h1>
-    <button onclick="redirectToTask('1')">Team 1</button>
-    <button onclick="redirectToTask('2')">Team 2</button>
-    <button onclick="redirectToTask('3')">Team 3</button>
-    <button onclick="redirectToTask('4')">Team 4</button>
-    <button onclick="redirectToTask('5')">Team 5</button>
+   <h1>Velg lag</h1>
+    <button class="button" onclick="redirectToTask('1')">Lag 1</button>
+    <button class="button" onclick="redirectToTask('2')">Lag 2</button>
+    <button class="button" onclick="redirectToTask('3')">Lag 3</button>
+    <button class="button" onclick="redirectToTask('4')">Lag 4</button>
+    <button class="button" onclick="redirectToTask('5')">Lag 5</button>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Team Task Selection</title>
+    <title>Velg lag</title>
     <script>
         // Angi hvilken QR-kode dette er (1 til 4)
         var qrCodeNumber = 2; // Endre dette for hver QR-kode
@@ -17,7 +17,7 @@
         };
 
         function redirectToTask(teamNumber) {
-            var password = prompt("Please enter your team's password:");
+            var password = prompt("Skriv inn lagets passord:");
 
             var correctPasswords = {
                 '1': '11',
@@ -31,17 +31,17 @@
                 var taskPage = tasksPerQRCode[teamNumber][qrCodeNumber - 1];
                 window.location.href = taskPage;
             } else {
-                alert("Incorrect password. Please try again.");
+                alert("Nå har du glemt passordet ditt din ku, det var virkelig ikke så vanskelig");
             }
         }
     </script>
 </head>
 <body>
     <h1>Velg lag</h1>
-    <button onclick="redirectToTask('1')">Team 1</button>
-    <button onclick="redirectToTask('2')">Team 2</button>
-    <button onclick="redirectToTask('3')">Team 3</button>
-    <button onclick="redirectToTask('4')">Team 4</button>
-    <button onclick="redirectToTask('5')">Team 5</button>
+    <button class="button" onclick="redirectToTask('1')">Lag 1</button>
+    <button class="button" onclick="redirectToTask('2')">Lag 2</button>
+    <button class="button" onclick="redirectToTask('3')">Lag 3</button>
+    <button class="button" onclick="redirectToTask('4')">Lag 4</button>
+    <button class="button" onclick="redirectToTask('5')">Lag 5</button>
 </body>
 </html>
