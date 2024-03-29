@@ -3,15 +3,15 @@
 <head>
     <title>Team Task Selection</title>
     <script>
-        // Angi hvilken QR-kode dette er (1 til 4)
-        var qrCodeNumber = 1; // Endre dette for hver QR-kode
+        // Specify which QR code this is (from 1 to 4)
+        var qrCodeNumber = 1; // Change this for each QR code
         
         var tasksPerQRCode = {
             '1': ['task_1.html', 'task_2.html', 'task_3.html', 'task_4.html'],
             '2': ['task_2.html', 'task_3.html', 'task_4.html', 'task_1.html'],
             '3': ['task_3.html', 'task_4.html', 'task_1.html', 'task_2.html'],
             '4': ['task_4.html', 'task_1.html', 'task_2.html', 'task_3.html'],
-            '5': ['task_5.html', 'task_5.html', 'task_5.html', 'task_5.html'] // Siste oppgave for alle lag
+            '5': ['task_5.html', 'task_5.html', 'task_5.html', 'task_5.html'] // Last task for all teams
         };
 
         function redirectToTask(teamNumber) {
@@ -26,6 +26,7 @@
             };
 
             if (password === correctPasswords[teamNumber]) {
+                // Correctly select the individual task URL
                 var taskPage = tasksPerQRCode[teamNumber][qrCodeNumber - 1];
                 window.location.href = taskPage;
             } else {
