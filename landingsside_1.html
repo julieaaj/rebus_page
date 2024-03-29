@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Velg ditt lag</title>
+    <script>
+        function redirectToTask(lagNummer) {
+            var tasksPerLag = {
+                '1': 'task_1.html',
+                '2': 'task_3.html',
+                '3': 'task_5.html',
+                '4': 'task_2.html',
+                '5': 'task_4.html'
+            };
+            window.location.href = tasksPerLag[lagNummer];
+        }
+    </script>
+</head>
+<body>
+    <h1>Velg ditt lag</h1>
+    <button onclick="redirectToTask('1')">Lag 1</button>
+    <button onclick="redirectToTask('2')">Lag 2</button>
+    <button onclick="redirectToTask('3')">Lag 3</button>
+    <button onclick="redirectToTask('4')">Lag 4</button>
+    <button onclick="redirectToTask('5')">Lag 5</button>
+</body>
+</html>

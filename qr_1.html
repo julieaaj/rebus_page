@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Velg ditt lag</title>
+    <script>
+        // Angi hvilken QR-kode dette er (1 til 4)
+        var qrCodeNumber = 1; // Endre dette for hver QR-kode
+
+        // Oppgavefordeling for hvert lag basert på QR-kode
+        var tasksPerQRCode = {
+            '1': ['task_1.html', 'task_2.html', 'task_3.html', 'task_4.html'],
+            '2': ['task_2.html', 'task_3.html', 'task_4.html', 'task_1.html'],
+            '3': ['task_3.html', 'task_4.html', 'task_1.html', 'task_2.html'],
+            '4': ['task_4.html', 'task_1.html', 'task_2.html', 'task_3.html'],
+            '5': ['task_5.html', 'task_5.html', 'task_5.html', 'task_5.html'] // Siste oppgave for alle lag
+        };
+
+        function redirectToTask(lagNummer) {
+            var taskPage = tasksPerQRCode[lagNummer][qrCodeNumber - 1];
+            window.location.href = taskPage;
+        }
+    </script>
+</head>
+<body>
+    <h1>Velg ditt lag</h1>
+    <button onclick="redirectToTask('1')">Lag 1</button>
+    <button onclick="redirectToTask('2')">Lag 2</button>
+    <button onclick="redirectToTask('3')">Lag 3</button>
+    <button onclick="redirectToTask('4')">Lag 4</button>
+    <button onclick="redirectToTask('5')">Lag 5</button>
+</body>
+</html>
