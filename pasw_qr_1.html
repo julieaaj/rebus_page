@@ -3,7 +3,7 @@
 <head>
     <title>Team Task Selection</title>
     <script>
-    // Angi hvilken QR-kode dette er (1 til 4)
+        // Angi hvilken QR-kode dette er (1 til 4)
         var qrCodeNumber = 1; // Endre dette for hver QR-kode
         
         var tasksPerQRCode = {
@@ -26,7 +26,7 @@
             };
 
             if (password === correctPasswords[teamNumber]) {
-                var taskPage = tasksPerQRCode[teamNumber];
+                var taskPage = tasksPerQRCode[teamNumber][qrCodeNumber - 1];
                 window.location.href = taskPage;
             } else {
                 alert("Incorrect password. Please try again.");
