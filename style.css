@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #c99;
+    background-color: ##fffee8;
     text-align: center;
     padding: 50px;
 }
@@ -27,7 +27,7 @@ h1 {
 }
 
 .button:hover {
-    background-color: #005f73;
+    background-color: #b59c0e;
 }
 
 .container {
@@ -47,11 +47,11 @@ h1 {
     }
 
     .button {
-        background-color: #008CBA;
+        background-color: #dbc232;
         color: white;
-        padding: 60px 120px; /* Increased padding for larger touch area */
-        font-size: 60px;    /* Larger font size for better readability */
-        border-radius: 8px; /* Optional: Larger border radius for a more rounded look */
+        padding: 30px 80px; /* Increased padding for larger touch area */
+        font-size: 43px;    /* Larger font size for better readability */
+        border-radius: 16px; /* Optional: Larger border radius for a more rounded look */
     }
 
     body {
