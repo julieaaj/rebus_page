@@ -47,8 +47,10 @@ h1 {
     }
 
     .button {
-        padding: 20px 40px; /* Increased padding for larger touch area */
-        font-size: 18px;    /* Larger font size for better readability */
+        background-color: #008CBA;
+        color: white;
+        padding: 60px 1200px; /* Increased padding for larger touch area */
+        font-size: 32px;    /* Larger font size for better readability */
         border-radius: 8px; /* Optional: Larger border radius for a more rounded look */
     }
 
