@@ -49,7 +49,7 @@ h1 {
     .button {
         background-color: #dbc232;
         color: white;
-        padding: 30px 80px; /* Increased padding for larger touch area */
+        padding: 20px 80px; /* Increased padding for larger touch area */
         font-size: 43px;    /* Larger font size for better readability */
         border-radius: 16px; /* Optional: Larger border radius for a more rounded look */
     }
