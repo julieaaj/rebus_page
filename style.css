@@ -40,7 +40,7 @@ h1 {
 }
 
 /* Responsive design for screens smaller than 600px */
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
     .container {
         width: 90%;
         padding: 10px;
