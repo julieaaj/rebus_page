@@ -66,10 +66,15 @@ h1 {
         padding: 20px;
     }
     
-    .image-style {
-      width: 33%;
-      height: auto;
+   img{
+        max-width: 100%;
+        max-height: 100%;
+        display: block; /* remove extra space below image */
     }
-
+    
+    .box{
+        width: 90%;        
+        border: 1px solid black;
+    }    
     /* Other responsive styles */
 }
