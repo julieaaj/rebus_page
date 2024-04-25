@@ -6,7 +6,7 @@
     <title>Velg lag</title>
     <script>
         // Angi hvilken QR-kode dette er (1 til 8)
-        var qrCodeNumber = 4; // Endre dette for hver QR-kode
+        var qrCodeNumber = '4'; // Endre dette for hver QR-kode
         
           // Task distribution for each QR code and team
            var tasksPerQRCode = {
@@ -37,7 +37,8 @@
             }
             
             
-            
+            console.log("Team Index: " + index);
+            console.log("Redirecting to: " + taskPage);
         }
     </script>
 </head>
@@ -46,5 +47,6 @@
     <button class="button" onclick="redirectToTask('1')">Lag 1</button>
     <button class="button" onclick="redirectToTask('2')">Lag 2</button>
     <button class="button" onclick="redirectToTask('3')">Lag 3</button>
+    
 </body>
 </html>
