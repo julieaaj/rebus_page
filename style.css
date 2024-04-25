@@ -67,7 +67,8 @@ h1 {
     }
     
     .image-style {
-      width: 90%;
+      width: 33%;
+      height: auto;
     }
 
     /* Other responsive styles */
