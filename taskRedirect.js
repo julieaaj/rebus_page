@@ -13,7 +13,7 @@ const taskMap = {
 };
 
 function promptPassword(team) {
-    const password = prompt("Please enter your password:", "");
+    var password = prompt("Please enter your password:", "");
     verifyTeam(team, password);
 }
 
