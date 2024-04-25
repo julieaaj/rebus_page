@@ -4,7 +4,7 @@ library(qrcode)
 
 # Generate QR codes
 for (i in 1:8) {
-  url <- paste0("https://julieaaj.github.io/rebus_page/pasw_qr_", i, ".html")
+  url <- paste0("https://julieaaj.github.io/rebus_page/post", i, ".html")
   qr_code <- qr_code(url)
   plot(qr_code)
   # Add a title
